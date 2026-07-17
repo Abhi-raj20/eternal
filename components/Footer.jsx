@@ -4,36 +4,12 @@ import Link from "next/link";
 import Image from "next/image";
 
 const footerLogos = [
-  {
-    src: "/images/2024/05/Ecologi-Logo-BW-1.png",
-    w: 120,
-    h: 76,
-  },
-  {
-    src: "/images/2024/05/CL_TOP100_2023_LOGO-BW-1.png",
-    w: 120,
-    h: 76,
-  },
-  {
-    src: "/images/2025/01/GBB-Brand-Partner-Logo-2025-white.png",
-    w: 76,
-    h: 76,
-  },
-  {
-    src: "/images/2024/05/ASUC-Logo-BW-1.png",
-    w: 120,
-    h: 76,
-  },
-  {
-    src: "/images/2024/05/Chas-Accredited-Contractor-Logo-BW-1.png",
-    w: 120,
-    h: 76,
-  },
-  {
-    src: "/images/2024/05/Considerate-Constructors-Logo-BW-1.png",
-    w: 120,
-    h: 76,
-  },
+  "/images/social_media/dark.svg",
+  "/images/social_media/trustmark_logo_light.svg",
+  "/images/social_media/logo-footer.svg",
+  "/images/social_media/logo.jpg",
+  "/images/social_media/installsure-white.png",
+  "/images/social_media/environment-agency.png"
 ];
 
 const footerMenu = [
@@ -48,8 +24,8 @@ const footerMenu = [
 
 export default function Footer() {
   return (
-    <footer className="site-footer pad-h">
-      <div className="footer-row1">
+    <footer className="site-footer charcoal-bg">
+      <div className="row-1 pad-h">
         <div>
           <h3>Super-Prime Construction.</h3>
           <br />
@@ -60,47 +36,56 @@ export default function Footer() {
           </h3>
         </div>
 
-        <div className="footer-right">
+        <div className="right">
           <div>
             <h4>Contact</h4>
             <p>
-              12th Floor Capital House,
+              3 Sussex House,
               <br />
-              25 Chapel Street, London
+              Stratton Close, Edgware, London,
               <br />
-              NW1 5DH
+              HA8 6PY
             </p>
-            <a href="mailto:info@knowles.uk.com">info@knowles.uk.com</a>
-            <a href="tel:+442039887994">+44 (0)20 3988 7994</a>
+            <p>
+              <a href="mailto:info@eternaldesignandbuild.com">info@eternaldesignandbuild.com</a>
+              <br />
+              <a href="tel:07728034763">07728034763</a>
+            </p>
           </div>
 
           <div>
             <h4>Follow</h4>
-            <a href="https://www.instagram.com/knowles_construction/">
-              Instagram
-            </a>
-            <a href="https://www.linkedin.com/company/knowlesconstruction/">
-              Linkedin
-            </a>
+            <p>
+              <a href="https://instagram.com/eternaldesignandbuild" target="_blank" rel="noopener noreferrer">
+                Instagram
+              </a>
+              <br />
+              <a href="https://linkedin.com/company/eternaldesignandbuild" target="_blank" rel="noopener noreferrer">
+                Linkedin
+              </a>
+            </p>
           </div>
         </div>
       </div>
 
-      <div className="footer-logos">
-        {footerLogos.map((logo, i) => (
-          <Image
-            key={i}
-            src={logo.src}
-            alt=""
-            width={logo.w}
-            height={logo.h}
-            style={{ objectFit: "contain" }}
-          />
-        ))}
-      </div>
+      <div className="row-2">
+  {footerLogos.map((src, i) => (
+    <div key={i} className="footer-logo">
+      <Image
+        src={src}
+        alt=""
+        width={200}
+        height={130}
+        className="footer-logo-img"
+        sizes="(max-width: 480px) 45vw, (max-width: 768px) 30vw, (max-width: 1200px) 16vw, 200px"
+      />
+    </div>
+  ))}
+</div>
 
-      <div className="footer-row3">
-        <div>© Knowles 2026. All Rights Reserved</div>
+      <div className="row-3 pad-h">
+        <div>© Eternal Design and Build 2026. All Rights Reserved</div>
+
         <ul className="footer-menu">
           {footerMenu.map((item) => (
             <li key={item.label}>
@@ -108,8 +93,9 @@ export default function Footer() {
             </li>
           ))}
         </ul>
+
         <button
-          className="back-to-top"
+          id="back-to-top"
           onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
         >
           Top

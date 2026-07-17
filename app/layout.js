@@ -2,7 +2,6 @@ import { Brygada_1918, Inter } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import Preloader from "@/components/Preloader";
 
 const brygada = Brygada_1918({
   subsets: ["latin"],
@@ -23,16 +22,16 @@ export const viewport = {
 };
 
 export const metadata = {
-  title: "Knowles | Super Prime Construction",
+  title: "Eternal | Design & Build",
   description:
-    "Knowles is a super-prime construction contractor who build and deliver some of the finest homes across London and the Home Counties.",
-  metadataBase: new URL("https://knowles.uk.com"),
+    "Eternal is a design and build company that creates exceptional spaces for clients across London and the Home Counties.",
+  metadataBase: new URL("http://localhost:3000"),
   openGraph: {
-    title: "Knowles | Super Prime Construction",
+    title: "Eternal | Design & Build",
     description:
-      "Knowles is a super-prime construction contractor who build and deliver some of the finest homes across London and the Home Counties.",
-    url: "https://knowles.uk.com/",
-    siteName: "Knowles",
+      "Eternal is a design and build company that creates exceptional spaces for clients across London and the Home Counties.",
+    url: "http://localhost:3000/",
+    siteName: "Eternal | Design & Build",
     type: "website",
   },
   twitter: {
@@ -44,7 +43,6 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en-US" className={`${brygada.variable} ${inter.variable}`}>
       <body>
-        <Preloader />
         <Header />
         {children}
         <Footer />

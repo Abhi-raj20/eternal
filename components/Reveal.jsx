@@ -2,11 +2,16 @@
 
 import { useEffect, useRef, useState } from "react";
 
+/**
+ * Original theme ka inViewport-based "out-of-view" -> "am-in-view" pattern,
+ * IntersectionObserver se implement kiya gaya. Class names exactly original
+ * jaisi rakhi hain taaki devtools mein bhi match ho.
+ */
 export default function Reveal({
   children,
   as: Tag = "div",
   className = "",
-  delay = 0,
+  opacityOnly = false,
   ...rest
 }) {
   const ref = useRef(null);
@@ -25,18 +30,20 @@ export default function Reveal({
           }
         });
       },
-      { threshold: 0.15 }
+      { threshold: 0.1 }
     );
 
     observer.observe(el);
     return () => observer.disconnect();
   }, []);
 
+  const baseClass = opacityOnly ? "out-of-opacity" : "out-of-view";
+  const activeClass = opacityOnly ? "in-opacity" : "am-in-view";
+
   return (
     <Tag
       ref={ref}
-      className={`reveal ${visible ? "is-visible" : ""} ${className}`}
-      style={{ transitionDelay: `${delay}ms` }}
+      className={`${baseClass} ${visible ? activeClass : ""} ${className}`}
       {...rest}
     >
       {children}

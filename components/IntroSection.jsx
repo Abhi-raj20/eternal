@@ -4,9 +4,9 @@ import { introBlocks } from "@/data/content";
 
 export default function IntroSection() {
   return (
-    <div className="pad-h pv-80" id="after-hero">
+    <div className="text-image pad-h pv-80">
       {introBlocks.map((block, i) => (
-        <div className="intro-block" key={i}>
+        <div key={i}>
           {block.imageFirst ? (
             <>
               <Reveal className="image-wrap">
@@ -14,11 +14,12 @@ export default function IntroSection() {
                   src={block.image}
                   alt=""
                   fill
-                  sizes="(max-width: 900px) 100vw, 50vw"
+                  imgClassName="full-bleed-image"
+                  sizes="(max-width: 768px) 100vw, 50vw"
                 />
               </Reveal>
-              <Reveal className="text" delay={150}>
-                <p className="lead">{block.heading}</p>
+              <Reveal>
+                <h3>{block.heading}</h3>
                 {block.paragraphs.map((p, idx) => (
                   <p key={idx}>{p}</p>
                 ))}
@@ -26,18 +27,19 @@ export default function IntroSection() {
             </>
           ) : (
             <>
-              <Reveal className="text">
-                <p className="lead">{block.heading}</p>
+              <Reveal>
+                <h3>{block.heading}</h3>
                 {block.paragraphs.map((p, idx) => (
                   <p key={idx}>{p}</p>
                 ))}
               </Reveal>
-              <Reveal className="image-wrap" delay={150}>
+              <Reveal className="image-wrap">
                 <ImageWithLoader
                   src={block.image}
                   alt=""
                   fill
-                  sizes="(max-width: 900px) 100vw, 50vw"
+                  imgClassName="full-bleed-image"
+                  sizes="(max-width: 768px) 100vw, 50vw"
                 />
               </Reveal>
             </>

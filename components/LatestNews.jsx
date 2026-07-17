@@ -5,8 +5,8 @@ import { newsItems } from "@/data/content";
 
 export default function LatestNews() {
   return (
-    <section className="latest-news pt-80 pb-80 pad-h">
-      <Reveal as="div" className="section-top">
+    <section className="latest-news pt-80 pad-h">
+      <Reveal as="div" className="top pb-80 ourservice">
         <h2>Latest News</h2>
         <Link className="button desktop-only" href="/news">
           More News
@@ -14,23 +14,25 @@ export default function LatestNews() {
       </Reveal>
 
       <div className="news-grid">
-        {newsItems.map((item, i) => (
-          <Reveal as="div" key={item.slug} delay={i * 100}>
-            <Link href={`/news/${item.slug}`} className="news-card">
+        {newsItems.map((item) => (
+          <Reveal as="div" key={item.slug}>
+            <Link href={`/news/${item.slug}`} className="news-card news-thumb">
               <div className="image">
                 <ImageWithLoader
                   src={item.image}
                   alt={item.title}
                   fill
                   imgClassName="full-bleed-image"
-                  sizes="(max-width: 900px) 50vw, 25vw"
+                  sizes="(max-width: 768px) 50vw, 25vw"
                 />
+                <div className="overlay" />
+                <div className="read-link brygada-font uppercase">Read</div>
               </div>
               <div className="details">
-                <span>{item.category}</span>
-                <span>{item.date}</span>
+                <div>{item.category}</div>
+                <div className="dark-grey">{item.date}</div>
               </div>
-              <div className="title">{item.title}</div>
+              <div className="title dark-grey">{item.title}</div>
             </Link>
           </Reveal>
         ))}

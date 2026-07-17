@@ -5,36 +5,36 @@ export const heroSlides = [
   {
     title: "Building Excellence",
     image:
-      "/images/2026/06/Warwick-Avenue-Homepage-1.jpg.webp",
+      "https://knowles.uk.com/wp-content/uploads/2026/06/Warwick-Avenue-Homepage-1.jpg.webp",
     alt: "",
   },
   {
     title: "London",
     image:
-      "/images/2026/02/marlborough-landscape.jpg.webp",
+      "https://knowles.uk.com/wp-content/uploads/2026/02/marlborough-landscape.jpg.webp",
     alt: "Light filled London townhouse interior with sash windows overlooking the garden",
   },
   {
     title: "Country",
     image:
-      "/images/2024/10/Country-e1727868371153.jpg",
+      "https://knowles.uk.com/wp-content/uploads/2024/10/Country-e1727868371153.jpg",
     alt: "Grand country house with stone facade set on landscaped grounds",
   },
   {
     title: "Structures",
     image:
-      "/images/2024/10/KN_Pembridge-11-1-e1730712297982.jpg",
+      "https://knowles.uk.com/wp-content/uploads/2024/10/KN_Pembridge-11-1-e1730712297982.jpg",
     alt: "Large basement excavation with structural propping and concrete retaining walls",
   },
   {
     title: "Special Projects",
     image:
-      "/images/2024/11/Special-Projects-e1730478698844.jpg",
+      "https://knowles.uk.com/wp-content/uploads/2024/11/Special-Projects-e1730478698844.jpg",
     alt: "Luxury wellness suite with timber sauna and blue tiled steam room",
   },
   {
     title: "AUTO CAVE",
-    image: "/images/2024/10/Autocave.jpg.webp",
+    image: "https://knowles.uk.com/wp-content/uploads/2024/10/Autocave.jpg.webp",
     alt: "Luxury car garage with classic and supercar collection",
   },
 ];
@@ -42,7 +42,7 @@ export const heroSlides = [
 export const introBlocks = [
   {
     image:
-      "/images/2024/10/Divisions-option2-scaled-e1727880509323.jpg",
+      "https://knowles.uk.com/wp-content/uploads/2024/10/Divisions-option2-scaled-e1727880509323.jpg",
     imageFirst: false,
     heading:
       "For over 30 years, Knowles has stood for building excellence in the UK's super-prime construction industry. Working on complex building projects in London and the Home Counties, our reputation speaks for itself.",
@@ -52,7 +52,7 @@ export const introBlocks = [
     ],
   },
   {
-    image: "/images/2026/02/55ar.jpg.webp",
+    image: "https://knowles.uk.com/wp-content/uploads/2026/02/55ar.jpg.webp",
     imageFirst: true,
     heading:
       "We have become the trusted go-to partner for architects, quantity surveyors, professional teams and private clients alike. Our focus on retaining in-house excellence is what sets us apart. Our ethos allows us to be dynamic, agile and self-sufficient, by keeping trades in house, we have the ability to deliver and manage work directly; a service unique in this industry.",
@@ -69,37 +69,85 @@ export const divisions = [
     slug: "london",
     color: "#e0ded9",
     image:
-      "/images/2024/10/London-e1727867652193.jpg",
+      "https://knowles.uk.com/wp-content/uploads/2024/10/London-e1727867652193.jpg",
   },
   {
     name: "Country",
     slug: "country",
     color: "#004a39",
     image:
-      "/images/2024/10/Country-e1727868371153.jpg",
+      "https://knowles.uk.com/wp-content/uploads/2024/10/Country-e1727868371153.jpg",
   },
   {
     name: "Structures",
     slug: "structures",
     color: "#6d352e",
     image:
-      "/images/2024/10/KN_Pembridge-11-1-e1730712297982.jpg",
+      "https://knowles.uk.com/wp-content/uploads/2024/10/KN_Pembridge-11-1-e1730712297982.jpg",
   },
   {
     name: "Special Projects",
     slug: "special-projects",
     color: "#15263d",
     image:
-      "/images/2024/10/Will-Pryce-Avenue-Road-_DSF3685-FL-copy-WEB.jpg.webp",
+      "https://knowles.uk.com/wp-content/uploads/2024/10/Will-Pryce-Avenue-Road-_DSF3685-FL-copy-WEB.jpg.webp",
   },
   {
     name: "AUTO CAVE",
     slug: "auto-cave",
     color: "#9e9f9f",
     image:
-      "/images/2024/05/Autocave1-e1727954926132.jpg",
+      "https://knowles.uk.com/wp-content/uploads/2024/05/Autocave1-e1727954926132.jpg",
   },
 ];
+
+export const services = [
+  {
+  name : "Extensions",
+  slug : "extensions",
+  },
+  {
+    name : "Loft Conversions",
+    slug : "loft-conversions",
+  },
+  {
+    name : "Renovations",
+    slug : "renovations",
+  },
+  {
+    name : "Bathrooms", 
+    slug : "bathrooms",
+  },
+  {
+    name : "Kitchens",
+    slug : "kitchens",
+  },
+  {
+    name : "Painting and Decorating",
+    slug : "painting-and-decorating",
+  },
+  {
+    name : "Roofing",
+    slug : "roofing",
+  },
+  {
+    name : "Flooring and Tiling",
+    slug : "flooring-and-tiling",
+  },
+  {
+    name : "Heating and Plumbing",
+    slug : "heating-and-plumbing",
+  },
+  {
+    name : "Electrics",
+    slug : "electrics",
+  },
+  {
+    name : "Landscaping",
+    slug : "landscaping",
+  },
+
+]
 
 export const featuredProjects = [
   {
@@ -108,7 +156,7 @@ export const featuredProjects = [
     slug: "warwick-avenue",
     color: "#e0ded9",
     image:
-      "/images/2026/05/20260128-WarwickAv-196-scaled.jpg.webp",
+      "https://knowles.uk.com/wp-content/uploads/2026/05/20260128-WarwickAv-196-scaled.jpg.webp",
   },
   {
     title: "Pimlico Townhouse",
@@ -116,7 +164,7 @@ export const featuredProjects = [
     slug: null,
     color: "#e0ded9",
     image:
-      "/images/2026/05/Chester-Landscape.jpg.webp",
+      "https://knowles.uk.com/wp-content/uploads/2026/05/Chester-Landscape.jpg.webp",
   },
   {
     title: "Avenue Road",
@@ -124,7 +172,7 @@ export const featuredProjects = [
     slug: null,
     color: "#6d352e",
     image:
-      "/images/2025/09/knowles-blog-1600w-hq.webp",
+      "https://knowles.uk.com/wp-content/uploads/2025/09/knowles-blog-1600w-hq.webp",
   },
   {
     title: "Cotswolds Manor House",
@@ -132,7 +180,7 @@ export const featuredProjects = [
     slug: null,
     color: "#004a39",
     image:
-      "/images/2025/06/langston-website.jpg.webp",
+      "https://knowles.uk.com/wp-content/uploads/2025/06/langston-website.jpg.webp",
   },
   {
     title: "Private Country House, Hertfordshire",
@@ -140,7 +188,7 @@ export const featuredProjects = [
     slug: null,
     color: "#004a39",
     image:
-      "/images/2025/06/Overture-Manor-Project-Image-scaled.jpg.webp",
+      "https://knowles.uk.com/wp-content/uploads/2025/06/Overture-Manor-Project-Image-scaled.jpg.webp",
   },
   {
     title: "23 Avenue Road NW8",
@@ -148,7 +196,7 @@ export const featuredProjects = [
     slug: "23-avenue-road",
     color: "#e0ded9",
     image:
-      "/images/2024/10/23-Avenue-Road-Main-scaled.jpg.webp",
+      "https://knowles.uk.com/wp-content/uploads/2024/10/23-Avenue-Road-Main-scaled.jpg.webp",
   },
   {
     title: "The Kenwood, Hampstead N6",
@@ -156,7 +204,7 @@ export const featuredProjects = [
     slug: "the-kenwood-hampstead",
     color: "#e0ded9",
     image:
-      "/images/2025/04/Instagram-Image-1-KSR-scaled.jpg.webp",
+      "https://knowles.uk.com/wp-content/uploads/2025/04/Instagram-Image-1-KSR-scaled.jpg.webp",
   },
   {
     title: "69 Avenue Road NW8",
@@ -164,7 +212,7 @@ export const featuredProjects = [
     slug: "69-avenue-road",
     color: "#e0ded9",
     image:
-      "/images/2024/08/69-Avenue-Road-Main.jpg.webp",
+      "https://knowles.uk.com/wp-content/uploads/2024/08/69-Avenue-Road-Main.jpg.webp",
   },
   {
     title: "Belgravia Townhouse",
@@ -172,7 +220,7 @@ export const featuredProjects = [
     slug: null,
     color: "#e0ded9",
     image:
-      "/images/2024/11/KNPelham-Nov24-08873-scaled.jpg.webp",
+      "https://knowles.uk.com/wp-content/uploads/2024/11/KNPelham-Nov24-08873-scaled.jpg.webp",
   },
   {
     title: "Cavendish Avenue NW8",
@@ -180,7 +228,7 @@ export const featuredProjects = [
     slug: null,
     color: "#e0ded9",
     image:
-      "/images/2025/03/KN-Cavendish-March25-09361-edited-scaled-e1744286844872.jpg",
+      "https://knowles.uk.com/wp-content/uploads/2025/03/KN-Cavendish-March25-09361-edited-scaled-e1744286844872.jpg",
   },
   {
     title: "55 Avenue Road NW8",
@@ -188,7 +236,7 @@ export const featuredProjects = [
     slug: "55-avenue-road",
     color: "#e0ded9",
     image:
-      "/images/2024/08/55avrd-cover-scaled.jpg.webp",
+      "https://knowles.uk.com/wp-content/uploads/2024/08/55avrd-cover-scaled.jpg.webp",
   },
   {
     title: "Marlborough Place NW8",
@@ -196,7 +244,7 @@ export const featuredProjects = [
     slug: "marlborough-place",
     color: "#e0ded9",
     image:
-      "/images/2024/09/Marlborough-Place-Main-scaled.jpg.webp",
+      "https://knowles.uk.com/wp-content/uploads/2024/09/Marlborough-Place-Main-scaled.jpg.webp",
   },
 ];
 
@@ -207,7 +255,7 @@ export const newsItems = [
     category: "Media",
     date: "May 2026",
     slug: "primeresi-23-5mn-price-tag-for-shh-designed-little-venice-villa",
-    image: "/images/2026/05/Warwick-v2.gif.webp",
+    image: "https://knowles.uk.com/wp-content/uploads/2026/05/Warwick-v2.gif.webp",
   },
   {
     title:
@@ -216,7 +264,7 @@ export const newsItems = [
     date: "March 2026",
     slug: "phase-2-st-johns-wood-residence",
     image:
-      "/images/2026/03/KN-Cavendish-March25-resized.jpg.webp",
+      "https://knowles.uk.com/wp-content/uploads/2026/03/KN-Cavendish-March25-resized.jpg.webp",
   },
   {
     title: "Knowles Annual Christmas Party",
@@ -224,7 +272,7 @@ export const newsItems = [
     date: "December 2025",
     slug: "knowles-annual-christmas-party",
     image:
-      "/images/2025/11/KnowlesXmas-001-1.jpg.webp",
+      "https://knowles.uk.com/wp-content/uploads/2025/11/KnowlesXmas-001-1.jpg.webp",
   },
   {
     title:
@@ -233,7 +281,7 @@ export const newsItems = [
     date: "September 2025",
     slug:
       "project-announcement-knowles-appointed-as-principal-contractor-on-10th-avenue-road-project",
-    image: "/images/2025/09/Exterior-1-scaled.jpg.webp",
+    image: "https://knowles.uk.com/wp-content/uploads/2025/09/Exterior-1-scaled.jpg.webp",
   },
 ];
 
@@ -241,9 +289,9 @@ export const navLinks = {
   left: [
     { label: "Projects", href: "/projects" },
     {
-      label: "Divisions",
+      label: "Services",
       href: "/divisions",
-      children: divisions.map((d) => ({
+      children: services.map((d) => ({
         label: d.name,
         href: `/divisions/${d.slug}`,
       })),
@@ -252,7 +300,7 @@ export const navLinks = {
   ],
   right: [
     { label: "About", href: "/about" },
-    { label: "Careers", href: "/careers" },
+    { label: "Reviews", href: "/reviews" },
     { label: "Contact", href: "/contact" },
   ],
 };
